@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+        <android.support.design.buttomappbar.ButtomAppBar
+            android:layout_width="match_parent"
+            android:layout_gravity="buttom"
+            android:id="@+id/buttom"
+            app:fabAligmentMode="end"
+            app:hideOnScrool="true"
+            app:navigationIcon="@dravable/ic_menu_black_24dp"
+            app:fabCradleRoundeCornerRdius="160dp"
+            android:layout_height="?actionBarSize"
+            android:theme="@style/Widget.MaterialComponents.ButtonAppBar"
+            app:bagroundTint="@color/colorPrimary">
+
+       </android.support.design.buttomappbar.ButtomAppBar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        app:elevation="4dp"
+        app:fabSize="normal"
+        app:layout_achor="id/buttom"
+        android:layout_alignFarentButtom="true"
+        android:layout_alignParentRight="true"
+        />
+
+</androidx.constraintlayout.widget.CoordinatorLayout>
+
